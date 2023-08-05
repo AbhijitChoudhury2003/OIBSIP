@@ -1,0 +1,123 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(90deg, #9198e5 0%,#f08630 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 1.7rem;
+  }
+  
+  header,form{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form input,
+  form button {
+    
+    padding: 0.3rem;
+    font-size: 2rem;
+  
+    border: none;
+    background: white;
+    
+  }
+  form button {
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+  }
+  .todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-list{
+    list-style: none;
+    min-width: 40%;
+
+
+  }
+  .todo{
+    background-color: white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: 8px;   
+    font-size: 1.5 rem; 
+    transition: all 0.3s ease;
+    
+  }
+  .todo li{
+    flex: 1;
+    /* pushes all buttons to right end */
+
+  }
+  .complete-btn, .trash-btn{
+    background-color:rgb(216, 73, 11) ;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin:  0px 0px 0px 0.5px;
+    font-size: 18px;
+    cursor: pointer  ;
+
+  }
+    .complete-btn{
+      background-color: green;
+    }
+    .todo-item{
+      margin: 1px 5px;
+    }
+    
+    .fa-trash, 
+    .fa-check{
+      pointer-events: none;
+    }
+  
+    .completed{
+      text-decoration: line-through;
+      opacity: 0.3;
+    }
+    .fall{
+      transform: translateY(10rem);
+      /*we can also add ***translateZ()** for a rotatory animation  */
+      opacity: 0;
+    }
+
+    .select{
+      margin: 1rem;
+      position: relative;
+      overflow: hidden;
+
+    }
+    .filter-todo{
+      border: none;
+      
+     
+      padding: 0.8rem 0.5rem;
+      color: #f08630;
+      background-color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+    }
+    .filter-todo:hover{
+      background-color: #f08630;
+      color: white;
+    }
